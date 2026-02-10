@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome, Patient John</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#book">Book Appointments</a></li>
+                <li><a href="#manage">Manage Appointments</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="book">
+        <h2>Book an Appointment</h2>
+        <form action="book_appointment.php" method="post">
+            <label for="doctor">Choose a doctor:</label>
+            <select name="doctor" id="doctor" >
+                <option value="" disabled selected>Select a doctor</option>
+                <option value="dr_smith">Dr. Smith</option>
+                <option value="dr_jones">Dr. Jones</option>
+            </select>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Book</button>
+            </form>
+            </section>
+</body>
+</html>
