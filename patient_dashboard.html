@@ -61,5 +61,26 @@
 
         </table>
      </section>
+
+     <div id="update-modal" class="modal-content">
+        <h2>Update Appointment</h2>
+        <form action="update_appointment.php" method="POST">
+            <label for="appointment_id_update">Appointment ID:</label>
+            <input type="text" id="appointment_id_update" readonly>
+
+            <label for="doctor_update">Choose a New Doctor:</label>
+            <select name="doctor_update" id="doctor_update">
+                <option value="dr_smith">Dr. Smith</option>
+                <option value="dr_jones">Dr. Jones</option>
+            </select>
+
+            <label for="date_update">Select a New Date:</label>
+            <input type="date" name="date" id="date_update" required>
+
+            <button type="submit" onclick="showUpdateConfirmation()">Update Appointment</button>
+            
+        </form>
+        <button onclick="closeUpdateModal()">Close</button>
+     </div>
 </body>
 </html>
